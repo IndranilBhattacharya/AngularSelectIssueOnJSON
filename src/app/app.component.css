@@ -1,0 +1,21 @@
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div select,
+div button {
+  margin-top: 3rem;
+}
+
+.pDiv {
+  max-height: 1rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin-top: 3rem;
+}
+
+.options {
+  position: fixed;
+}

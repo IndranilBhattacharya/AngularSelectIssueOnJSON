@@ -1,0 +1,15 @@
+<div>
+  {{ selectedOption | json }}
+  <select [(ngModel)]="selectedOption">
+    <option *ngFor="let o of options" [ngValue]="o">{{ o.value }}</option>
+  </select>
+  <button (click)="setOption()">Set Option</button>
+  <!--<div class="pDiv" #dv>
+    <div class="options">
+      <option *ngFor="let o of options" [ngValue]="o">
+        {{ o.value }}
+      </option>
+    </div>
+  </div>-->
+</div>
+<!--<app-child [updateValue]="testValue"></app-child>-->
