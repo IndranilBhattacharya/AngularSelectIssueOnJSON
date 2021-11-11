@@ -23,10 +23,10 @@ export class AppComponent {
     { id: 3, value: 'Option 4' },
     { id: 4, value: 'Option 5' },
   ];
-  selectedOption: OptionData = { id: null, value: null };
+  selectedOption: OptionData = this.options[2];
 
   setOption() {
-    this.selectedOption = { id: 3, value: 'Option 4' } as OptionData;
+    this.selectedOption = this.options.filter((o) => o.id == 4)[0];
   }
 
   /*constructor(private renderer: Renderer2) {}
